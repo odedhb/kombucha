@@ -1,0 +1,128 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../font/Montserrat-Regular.otf);
+}
+
+body {
+    padding-top: 50px;
+    font-family: montserrat;
+    overflow: hidden;
+}
+
+.ksd-top-level {
+    text-align: center;
+}
+
+.work-wrapper {
+    display: block;
+}
+
+.work-container {
+    width: 100%;
+}
+
+.work-decor {
+    float: left;
+    background-color: pink;
+    width: 5%;
+    height: 100%;
+}
+
+.work-image {
+    float: left;
+    background-color: orange;
+    width: 55%;
+    height: 100%;
+    min-width: 200px;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.work-descr {
+    float: left;
+    height: 100%;
+    background-color: magenta;
+    width: 40%;
+    min-width: 150px;
+    padding: 10px 20px;
+}
+
+.work-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.work-sub-title {
+    font-size: 32px;
+}
+
+.work-text {
+    font-size: 24px;
+    bottom: 40px;
+    margin: 40px 0px;
+}
+
+.work-tech {
+    position: relative;
+    bottom: 10px;
+}
+
+.tech-img {
+    width: 48px;
+    height: 48px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.non-first {}
+
+@media (max-width: 768px) {
+    .work-container {
+        display: block;
+    }
+    .work-decor {
+        display: block;
+        height: 10%;
+        width: 100%;
+    }
+    .work-image {
+        display: block;
+        height: 65%;
+        width: 100%;
+        border-top: 5px solid #fff;
+        border-bottom: 5px solid #fff;
+        border-left: 0px;
+        border-right: 0px;
+    }
+    .work-descr {
+        display: block;
+        height: 25%;
+        width: 100%;
+    }
+    .work-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .work-sub-title {
+        font-size: 22px;
+    }
+    .work-text {
+        display: none;
+    }
+    .tech-img {
+        max-width: 32px;
+        max-height: 32px;
+        margin-top: 5px;
+        margin-left: 5px;
+        top: 10%;
+        position: relative;
+    }
+}
