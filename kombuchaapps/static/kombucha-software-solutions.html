@@ -22,7 +22,7 @@
 
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="nav-bar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -51,7 +51,7 @@
 
         <div class="ksd-top-level">
             <h1>Our Portfolio</h1>
-            <p class="lead">We take your idea and make it work (the lean way...)</p>
+            <p class="lead" id="headerSubTitle">We take your idea and make it work (the lean way...)</p>
         </div>
         <div class="work-wrapper">
             <div class="work-container" id="firstContainer">
@@ -69,8 +69,46 @@
                     <div class="work-tech">
                     </div>
                 </div>
-                <div class="work-image" style="background-image: url(img/WhereDat-fastest-Android-search-engine.png)"></div>
-                <div class="work-decor" style="background-color: #E24C3E"><img class="tech-img" src="img/android-512x512-white.png" alt="Google Android" title="Google Android"><img class="tech-img" src="img/google-app-engine-black-white.png" alt="Google App Engine" title="Google App Engine"><img class="tech-img" src="img/Python_logo-512-white.png" alt="Python" title="Python"><img class="tech-img" src="img/Java-logo-white.png" alt="Java" title="Java">
+                <div class="work-image">
+                    <div id="carousel-wheredat" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-wheredat" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-wheredat" data-slide-to="1"></li>
+                            <li data-target="#carousel-wheredat" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="carousel-img top-carousel" style="background-image: url(img/whereDat/WhereDat-category-main-screen.png);"></div>
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-img top-carousel" style="background-image: url(img/whereDat/WhereDat-category-deep-search.png);"></div>
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-img top-carousel" style="background-image: url(img/whereDat/WhereDat-category-screen.png);"></div>
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-wheredat" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-wheredat" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="work-techno" style="background-color: #E24C3E"><img class="tech-img" src="img/android-512x512-white.png" alt="Google Android" title="Google Android"><img class="tech-img" src="img/google-app-engine-black-white.png" alt="Google App Engine" title="Google App Engine"><img class="tech-img" src="img/Python_logo-512-white.png" alt="Python" title="Python"><img class="tech-img" src="img/Java-logo-white.png" alt="Java" title="Java">
                 </div>
             </div>
             <div class="work-container non-first" id="secondContainer">
@@ -89,43 +127,27 @@
                     </div>
                 </div>
                 <div class="work-image" style="background-image: url(img/Foret-Blanche-loyalty-club.jpg)"></div>
-                <div class="work-decor" style="background-color: #CCD4A8"><img class="tech-img" src="img/HTML5-White.png" alt="HTML5" title="HTML5"><img class="tech-img" src="img/jquery-icon-512x512-white.png" alt="jQuery" title="jQuery"><img class="tech-img" src="img/CSS3-512x512-white.png" alt="CSS3" title="CSS3"><img class="tech-img" src="img/bootstrap-512x512-white.png" alt="Bootstrap" title="Bootstrap"><img class="tech-img" src="img/google-app-engine-black-white.png" alt="Google App Engine" title="Google App Engine">
+                <div class="work-techno" style="background-color: #CCD4A8"><img class="tech-img" src="img/HTML5-White.png" alt="HTML5" title="HTML5"><img class="tech-img" src="img/jquery-icon-512x512-white.png" alt="jQuery" title="jQuery"><img class="tech-img" src="img/CSS3-512x512-white.png" alt="CSS3" title="CSS3"><img class="tech-img" src="img/bootstrap-512x512-white.png" alt="Bootstrap" title="Bootstrap"><img class="tech-img" src="img/google-app-engine-black-white.png" alt="Google App Engine" title="Google App Engine">
                 </div>
             </div>
             <div class="work-container non-first">
-                <div class="work-decor" style="background-color: #E5ECC6"></div>
-                <div class="work-image" style="background-image: url(img/Foret-Blanche-loyalty-club.jpg)"></div>
-                <div class="work-descr white-text" style="background-color: #CBB876">
-                    <div class="work-title">Foret Blanche</div>
-                    <div class="work-sub-title">Serenity Club</div>
+                <div class="work-descr white-text" style="background-color: #00BCD4">
+                    <div class="work-title">VOCA</div>
+                    <div class="work-sub-title">Handsfree voice texting</div>
                     <div class="work-text">
                         <ul style="list-style-type:circle">
-                            <li>An ultra-fast Android search application.</li>
-                            <li>Adapted for Adnroid 6.0 marshmallow.</li>
-                            <li>Effcient & accessible UX</li>
-                            <li>Deep search abilities - lets a user search directly inside other apps, calendar, contacts or the web</li>
+                            <li>An Android app for Handsfree voice texting</li>
+                            <li>Google App Engine as backend system</li>
+                            <li>Advanced natural language understanding - AI algorithms</li>
+                            <li>UX adapted for handsfree usage</li>
+                            <li>Text to speeach and dicatation dication of text messages</li>
                         </ul>
                     </div>
-                    <div class="work-tech"><img class="tech-img" src="img/android-512x512-white.png"><img class="tech-img" src="img/google-app-engine-black-white.png">
+                    <div class="work-tech">
                     </div>
                 </div>
-            </div>
-            <div class="work-container non-first">
-                <div class="work-decor" style="background-color: #E5ECC6"></div>
-                <div class="work-image" style="background-image: url(img/Foret-Blanche-loyalty-club.jpg)"></div>
-                <div class="work-descr white-text" style="background-color: #CBB876">
-                    <div class="work-title">Foret Blanche</div>
-                    <div class="work-sub-title">Serenity Club</div>
-                    <div class="work-text">
-                        <ul style="list-style-type:circle">
-                            <li>An ultra-fast Android search application.</li>
-                            <li>Adapted for Adnroid 6.0 marshmallow.</li>
-                            <li>Effcient & accessible UX</li>
-                            <li>Deep search abilities - lets a user search directly inside other apps, calendar, contacts or the web</li>
-                        </ul>
-                    </div>
-                    <div class="work-tech"><img class="tech-img" src="img/android-512x512-white.png"><img class="tech-img" src="img/google-app-engine-black-white.png">
-                    </div>
+                <div class="work-image" style="background-image: url(img/VOCA/walkthrough1_1.png)"></div>
+                <div class="work-techno" style="background-color: #E91E63"><img class="tech-img" src="img/android-512x512-white.png" alt="Google Android" title="Google Android"><img class="tech-img" src="img/google-app-engine-black-white.png" alt="Google App Engine" title="Google App Engine"><img class="tech-img" src="img/Python_logo-512-white.png" alt="Python" title="Python"><img class="tech-img" src="img/Java-logo-white.png" alt="Java" title="Java">
                 </div>
             </div>
         </div>
@@ -144,6 +166,8 @@
     <script>
         $(document).ready(function () {
 
+            var navBarHeight = $('#nav-bar').outerHeight() - 1;
+            
             var animationTime = 400;
             var lastAnimation = 0;
             var quietPeriod = 600;
@@ -154,8 +178,26 @@
 
             var topOfFirstDiv = $('#firstContainer').offset().top;
             var bottomOfVisibleWindow = $(window).height();
-            $('#firstContainer').css('height', bottomOfVisibleWindow - topOfFirstDiv);
-            $('.non-first').css('height', bottomOfVisibleWindow - 50);
+            var topContainerHeight = bottomOfVisibleWindow - topOfFirstDiv;
+
+            var nonTopContainerHeight = bottomOfVisibleWindow - navBarHeight;
+
+            //set work containers size
+            $('#firstContainer').css('height', topContainerHeight);
+            $('.non-first').css('height', nonTopContainerHeight);
+
+            //set carousel image sizes
+            //top container                
+            //var firstWorkDescrDiv = $("#firstContainer>.work-descr.white-text").outerHeight();
+            var firstWorkImage = $("#firstContainer>.work-image").height();
+            //var firstWorkTechnoDiv = $("#firstContainer>.work-techno").outerHeight()
+
+            $('.top-carousel').css('height', firstWorkImage);
+
+            //rest of containers
+            var nonFirstWorkImage = $("#secondContainer>.work-image").height();
+
+            $('.non-top-carousel').css('height', nonFirstWorkImage);
 
             //swipe scroll the page
             $(document).on('DOMMouseScroll mousewheel', function (e) {
